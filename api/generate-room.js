@@ -12,7 +12,7 @@ export default async function handler(req, res) {
 
     const cleanProducts = products
       .filter((p) => p.title && p.image)
-      .slice(0, 4);
+      .slice(0, 5);
 
     console.log('PRODUCTS:', JSON.stringify(cleanProducts, null, 2));
 
