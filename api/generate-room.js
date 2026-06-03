@@ -17,16 +17,30 @@ export default async function handler(req, res) {
     console.log('PRODUCTS:', JSON.stringify(cleanProducts, null, 2));
 
     const prompt = `
-Create a luxury modern living room interior using the furniture products shown in the uploaded product images.
+Create an ultra luxury interior design scene using the furniture products provided.
 
-Very important:
-- Use the product images as visual references.
-- Keep the sofa, table, TV stand, colors, materials, and shapes as close as possible to the reference images.
-- Do not invent completely different furniture.
-- Create a premium villa living room.
-- Ultra realistic interior photography.
-- Natural daylight.
-- High-end furniture catalog quality.
+Requirements:
+
+- Luxury Italian villa
+- Architectural Digest quality
+- Minotti style
+- Bentley Home style
+- B&B Italia style
+- Premium materials
+- Floor-to-ceiling windows
+- Warm natural sunlight
+- Luxury marble finishes
+- Designer interior
+- Ultra realistic furniture photography
+- Million-dollar villa atmosphere
+- Magazine cover quality
+
+The furniture products must remain the main focus.
+
+Keep the original shape, color and proportions of the furniture.
+
+Photorealistic.
+8K quality.
 `;
 
     const content = [
