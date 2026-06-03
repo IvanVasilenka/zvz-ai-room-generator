@@ -20,22 +20,35 @@ export default async function handler(req, res) {
 const prompt = `
 Create a luxury Italian villa living room using the provided furniture images.
 
+reate an ultra luxury interior design scene using the furniture products provided.
+
+Room selection rules:
+
+* If the main furniture is a bed, create a luxury bedroom.
+* If the main furniture is a sofa, create a luxury living room.
+* If the main furniture is a dining table, create a luxury dining room.
+* If the main furniture is a TV stand, create a luxury living room.
+* If multiple furniture pieces are provided, place them naturally in the same interior space.
+
 Requirements:
 
-* Use the furniture images as references
-* Keep the original shape, colors, materials and proportions
-* Luxury Italian interior design
-* Minotti and B&B Italia aesthetic
+* Luxury Italian villa
+* Minotti style
+* B&B Italia style
+* Premium materials
 * Floor-to-ceiling windows
 * Warm natural daylight
-* Premium marble and wood finishes
-* Ultra realistic interior photography
-* Magazine-quality rendering
+* Architectural Digest quality
+* Magazine-quality photography
+
+Use the furniture images as references.
+
+Keep the original shape, colors, materials and proportions.
+
+The furniture must remain the main focus.
 
 Single room only.
 One camera angle.
-The furniture must be the main focus.
-
 Photorealistic.
 `;
 
