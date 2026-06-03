@@ -63,6 +63,7 @@ Very important:
     });
 
     const data = await response.json();
+    console.log(JSON.stringify(data, null, 2));
 
     if (!response.ok) {
       return res.status(500).json({
