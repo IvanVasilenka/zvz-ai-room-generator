@@ -25,9 +25,13 @@ High-end villa.
       }
     );
 
-    const data = await response.json();
+const data = await response.json();
 
-    return res.status(200).json(data);
+const imageBase64 = data.data[0].b64_json;
+
+return res.status(200).json({
+  image: `data:image/png;base64,${imageBase64}`
+});
 
   } catch (error) {
     return res.status(500).json({
