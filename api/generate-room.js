@@ -9,6 +9,7 @@ export default async function handler(req, res) {
 
   try {
     const { products = [] } = req.body || {};
+    console.log(JSON.stringify(products, null, 2));
 
     const productText = products
       .map((p, index) => {
